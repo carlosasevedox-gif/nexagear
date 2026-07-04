@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus pedidos — NexaGear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ TOPO ============ -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">N</span>
+        NexaGear
+      </a>
+      <form class="search" action="busca.html">
+        <input type="text" placeholder="Buscar produtos...">
+        <button type="submit" aria-label="Buscar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        </button>
+      </form>
+      <div class="top-actions">
+        <a href="cadastro.html">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          Entrar
+        </a>
+        <a href="#" aria-label="Favoritos">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </a>
+        <a href="pedidos.html" class="cart" aria-label="Carrinho">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8.6a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+          <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a class="active" href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ PEDIDOS ============ -->
+  <main class="section">
+    <div class="container">
+
+      <h1 class="page-title" style="color: var(--ink);">Meus pedidos</h1>
+
+      <div class="orders-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="order-product">
+                  <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=300&q=80" alt="Teclado Compact Pro">
+                  <div>
+                    <h3>Teclado Compact Pro</h3>
+                    <a class="remove-link" href="#">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                      Remover
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="td-price">R$ 129,90</td>
+              <td class="td-qty">
+                <div class="stepper">
+                  <button type="button">−</button>
+                  <span>1</span>
+                  <button type="button">+</button>
+                </div>
+              </td>
+              <td class="td-subtotal">R$ 129,90</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="order-product">
+                  <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=300&q=80" alt="Mouse Speed One">
+                  <div>
+                    <h3>Mouse Speed One</h3>
+                    <a class="remove-link" href="#">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                      Remover
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="td-price">R$ 79,90</td>
+              <td class="td-qty">
+                <div class="stepper">
+                  <button type="button">−</button>
+                  <span>1</span>
+                  <button type="button">+</button>
+                </div>
+              </td>
+              <td class="td-subtotal">R$ 79,90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="summary-card">
+        <h2>Resumo do pedido</h2>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span class="value">R$ 209,80</span>
+        </div>
+        <div class="summary-row">
+          <span>Frete</span>
+          <span class="free">Grátis</span>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <strong>R$ 209,80</strong>
+        </div>
+        <a class="btn-purple btn-block" href="#" style="margin-top: 0;">Finalizar compra</a>
+        <a class="btn-outline-gray" href="produtos.html">Continuar comprando</a>
+        <p class="secure-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+          Compra 100% segura
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="features">
+      <div class="feature">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Compra Segura</h3>
+        <p>Ambiente 100% seguro para suas compras.</p>
+      </div>
+      <div class="feature">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5h13v11H1z"/><path d="M14 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        <h3>Entrega Rápida</h3>
+        <p>Enviamos para todo o Brasil com agilidade.</p>
+      </div>
+      <div class="feature">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5L7.5 22l4.5-3 4.5 3-1.5-7.5"/></svg>
+        <h3>Produtos de Qualidade</h3>
+        <p>Garantia em todos os acessórios da loja.</p>
+      </div>
+      <div class="feature">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M3 15a2 2 0 0 1 2-2h1v6H5a2 2 0 0 1-2-2z"/><path d="M21 15a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z"/></svg>
+        <h3>Atendimento Dedicado</h3>
+        <p>Suporte especializado de seg a sex.</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-brand">
+        <span class="brand-badge">N</span>
+        <div>
+          <strong>NexaGear</strong>
+          <small>Seu setup, sua evolução.</small>
+        </div>
+      </div>
+      <p class="copyright">© 2026 NexaGear. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
